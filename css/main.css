@@ -88,6 +88,18 @@ html {
     .pix-fixed-width-480 { max-width: 100%;width: 480px; }
     .pix-fixed-width-380 { max-width: 100%;width: 380px; }
 
+    .row {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display:         flex;
+        flex-wrap: wrap;
+      }
+      .row > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+      }
+
     /*  Colors  */
     .light-black-bg { background: #222; }
     .gray-dark-bg { background: #444; }
