@@ -1,9 +1,3 @@
-/**
- * PIXBUILDER
- * By PixFort
- * Copyright 2017
- * www.pixfort.com
- */
 
 $( window ).load(function() {
 
@@ -87,7 +81,7 @@ $( window ).load(function() {
             if(have_list){ values['pixfort_form_list'] = the_list; }
             var post_data;
             var output;
-            $.post('pix_mail/new_contact.php', values, function(response){
+            $.post('https://www.ozacasolucoesdigitais.com.br/planos-contato.php', values, function(response){
                 $(theform).find('.alert').remove();
                 if(response.type == 'error'){
                 	var alert_msg = '<div class="alert alert-danger" role="alert" style="display:none;">'+response.text+'</div>';
